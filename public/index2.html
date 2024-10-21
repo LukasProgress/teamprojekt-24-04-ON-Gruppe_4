@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header Responsiv</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/styles.css"> <!-- Inkludiere die CSS-Datei -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" /> <!-- Leaflet CSS -->
+</head>
+
+<body>
+
+    <header class="bg-primary text-white"> <!-- Header mit blauem Hintergrund und weißem Text -->
+        <div class="container"> <!-- Container für Inhalt -->
+            <nav class="navbar navbar-expand-lg navbar-light"> <!-- Navbar mit Bootstrap -->
+                <a class="navbar-brand" href="#">Logo</a> <!-- Logo -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Navigation umschalten"> <!-- Button zum Umschalten der Navigation -->
+                    <span class="navbar-toggler-icon"></span> <!-- Symbol für den Umschalt-Button -->
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav"> <!-- Kollabierbare Navigation -->
+                    <ul class="navbar-nav ml-auto"> <!-- Liste der Navigationslinks -->
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Startseite</a> <!-- Link zur Startseite -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Über</a> <!-- Link zu Über -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Dienstleistungen</a> <!-- Link zu Dienstleistungen -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Kontakt</a> <!-- Link zu Kontakt -->
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <!-- Abschnitt für Profil und Symbole -->
+        <div class="profile-section"> <!-- Container für das Profil -->
+            <!-- Symbole auf der linken Seite -->
+            <div class="icon-container"> <!-- Container für Symbole -->
+                <img src="img/profile-icon.png" alt="Profil" class="small-icon"> <!-- Profil-Icon -->
+                <img src="img/pollen-icon.png" alt="Pollen" class="small-icon"> <!-- Pollen-Icon -->
+            </div>
+
+            <!-- Zentrale Profilbild -->
+            <div class="profile-container"> <!-- Container für das Profilbild -->
+                <img src="img/earth.jpg" alt="Profilbild" class="profile-img"> <!-- Profilbild -->
+            </div>
+
+            <!-- Symbole auf der rechten Seite -->
+            <div class="icon-container"> <!-- Container für Symbole -->
+                <img src="img/map-icon.png" alt="Karte" class="small-icon"> <!-- Karten-Icon -->
+                <img src="img/favorism-icon.png" alt="Favoriten" class="small-icon"> <!-- Favoriten-Icon -->
+            </div>
+        </div>
+    </section>
+    <div class="container"> <!-- Hauptcontainer für den Inhalt -->
+        <section class="city-selection"> <!-- Abschnitt zur Auswahl der Stadt -->
+            <h6>Stadt auswählen</h6> <!-- Überschrift für Stadtwahl -->
+            <table class="schedule-table"> <!-- Tabelle für Zeitplan -->
+                <thead>
+                    <tr>
+                        <th>Mo.</th> <!-- Montag -->
+                        <th>Di.</th> <!-- Dienstag -->
+                        <th>Mi.</th> <!-- Mittwoch -->
+                        <th>00:00</th> <!-- Zeit 00:00 -->
+                        <th>01:00</th> <!-- Zeit 01:00 -->
+                        <th>02:00</th> <!-- Zeit 02:00 -->
+                        <th>...</th> <!-- Weitere Zeiten -->
+                        <th>24:00</th> <!-- Zeit 24:00 -->
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Berlin</td> <!-- Zeigt die Stadt Berlin an -->
+                        <td>Berlin</td>
+                        <td>Berlin</td>
+                        <td>→</td> <!-- Pfeil nach rechts -->
+                        <td>→</td>
+                        <td>→</td>
+                        <td>→</td>
+                        <td>→</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="pollen-section"> <!-- Abschnitt für Pollenflug -->
+            <h5>Pollenflug</h5> <!-- Überschrift für Pollenflug -->
+            <table class="pollen-table"> <!-- Tabelle für Polleninformationen -->
+                <thead>
+                    <tr>
+                        <th>Welche Pollen fliegen</th> <!-- Pollenarten -->
+                        <th>Wie stark fliegen die Pollen</th> <!-- Pollenstärke -->
+                        <th>Verlauf</th> <!-- Verlauf der Pollen -->
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Birkenpollen</td> <!-- Pollenart -->
+                        <td>Sehr stark</td> <!-- Pollenstärke -->
+                        <td>
+                            <button class="btn btn-success">↑</button> <!-- Button für Erhöhung -->
+                            <button class="btn btn-danger">↓</button> <!-- Button für Senkung -->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Gräserpollen</td> <!-- Pollenart -->
+                        <td>Maßig</td> <!-- Pollenstärke -->
+                        <td>
+                            <button class="btn btn-success">↑</button> <!-- Button für Erhöhung -->
+                            <button class="btn btn-danger">↓</button> <!-- Button für Senkung -->
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="scrollable-section"> <!-- Abschnitt mit scrollbarem Inhalt -->
+            <h5>Wie die Pollen in nächster Zeit fliegen</h5> <!-- Überschrift für Pollenflugvorhersage -->
+            <p>Hier kommt eine Beschreibung oder weitere Informationen über den Pollenflug.</p> <!-- Beschreibung -->
+        </section>
+
+        <section class="weather-map bg-light p-3"> <!-- Abschnitt für Wetterkarte -->
+            <form id="search-form" class="d-flex mb-3"> <!-- Suchformular -->
+                <input type="text" id="search-input" class="form-control me-2" placeholder="Stadt suchen..." required> <!-- Eingabefeld für Stadt -->
+                <button type="submit" class="btn btn-primary">Suchen</button> <!-- Suchbutton -->
+            </form>
+            <div id="map"></div> <!-- Container für die Karte -->
+        </section>
+    </div>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script> <!-- Leaflet JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> <!-- jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script> <!-- Popper.js -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> <!-- Bootstrap JavaScript -->
+
+    <!-- Wetter-Logik-Skript -->
+    <script src="js/OpenWeatherMap.js"></script> <!-- Skript für Wetterlogik -->
+    <script>
+        // Initialisiere die Karte mit Leaflet
+        var map = L.map('map').setView([51.1657, 10.4515], 6); // Setze die Koordinaten für Deutschland
+
+        // Füge die Kachel-Ebene hinzu
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors' // Attribution für die Kacheln
+        }).addTo(map); // Füge die Kacheln zur Karte hinzu
+    </script>
+</body>
+
+</html>
