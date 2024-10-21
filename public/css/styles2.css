@@ -1,0 +1,114 @@
+/* Header styling / Stilizare header */
+header {
+    border: 2px solid #fcfeff; /* Border for distance calculation / Bordură pentru a calcula distanța */
+    padding: 10px 0; /* Padding to add space / Padding pentru a adăuga spațiu */
+    margin-bottom: 10px; /* Space below the header / Spațiu sub header */
+}
+
+/* Navbar styling / Stilizare navbar */
+.navbar {
+    border: 1px solid #fff; /* Border for navbar / Bordură pentru navbar */
+    display: flex; /* Flexbox for layout / Flexbox pentru layout */
+}
+
+/* Margin for menu items / Margină pentru itemii din meniu */
+.nav-item {
+    margin: 0 15px; /* Space between menu items / Spațiu între itemii din meniu */
+}
+
+/* Style for menu links / Stil pentru link-urile din meniu */
+.nav-link {
+    padding: 10px 15px; /* Inner space for links / Spațiu interior pentru link-uri */
+}
+
+/* Responsiveness for navbar / Responsivitate pentru navbar */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center; /* Center text on mobile / Centrăm textul pe mobil */
+    }
+    .nav-item {
+        margin: 10px 0; /* Vertical space between menu items on mobile / Spațiu vertical între itemii din meniu pe mobil */
+    }
+}
+
+/* Profile section styling / Stilizare secțiune profil */
+.profile-section {
+    display: flex; /* Flexbox layout / Layout cu Flexbox */
+    justify-content: space-between; /* Space between icons and profile / Spațiu între iconițe și profil */
+    align-items: center; /* Align items vertically in the center / Aliniere verticală a itemilor la centru */
+    max-width: 690px; /* Maximum width of the section / Lățimea maximă a secțiunii */
+    margin: 0 auto; /* Center the section horizontally / Centrarea secțiunii pe orizontală */
+    border: 2px solid green; /* Border for visibility / Bordură pentru vizualizare */
+    padding: 20px; /* Padding for space inside the section / Padding pentru spațiu în interiorul secțiunii */
+}
+
+/* City selection styling / Stilizare selecție oraș */
+.city-selection {
+    text-align: center; /* Center text in this section / Centrarea textului în această secțiune */
+    margin: 30px 0; /* Vertical space around the section / Spațiu vertical în jurul secțiunii */
+}
+
+/* Icon container styling / Stilizare container iconițe */
+.icon-container {
+    display: flex; /* Flexbox layout for icons / Layout cu Flexbox pentru iconițe */
+    flex-direction: column; /* Align icons in a column / Alinierea iconițelor pe verticală */
+    gap: 20px; /* Space between icons / Spațiu între iconițe */
+    border: 2px solid blue; /* Border for visibility / Bordură pentru vizualizare */
+}
+
+/* Small icon styling / Stilizare iconițe mici */
+.small-icon {
+    width: 60px; /* Set width for small icons / Lățime setată pentru iconițele mici */
+    height: 60px; /* Set height for small icons / Înălțime setată pentru iconițele mici */
+    object-fit: cover; /* Cover the container while maintaining aspect ratio / Acoperirea containerului menținând raportul de aspect */
+    border: 2px solid black; /* Border for visibility / Bordură pentru vizualizare */
+    border-radius: 10px; /* Rounded corners for icons / Colțuri rotunjite pentru iconițe */
+}
+
+/* Table cell styling for schedule and pollen tables / Stilizare celule tabel pentru tabelele de program și polen */
+.schedule-table th, .schedule-table td, .pollen-table th, .pollen-table td {
+    border: 1px solid #000; /* Border for table cells / Bordură pentru celulele tabelului */
+    padding: 10px; /* Padding inside cells / Padding în interiorul celulelor */
+    text-align: center; /* Center text in cells / Centrarea textului în celule */
+}
+
+/* Schedule and pollen table styling / Stilizare tabel program și polen */
+.schedule-table, .pollen-table {
+    width: 100%; /* Full width of the table / Lățime completă a tabelului */
+    margin: 0 auto; /* Center the table horizontally / Centrarea tabelului pe orizontală */
+    border-collapse: collapse; /* Collapse borders for better appearance / Colapsarea bordurilor pentru un aspect mai bun */
+}
+
+/* Map container styling / Stilizare container hartă */
+#map {
+    height: 400px; /* Set height for the map / Înălțime setată pentru hartă */
+    margin-top: 20px; /* Space above the map / Spațiu deasupra hărții */
+}
+
+/* Pollen section heading styling / Stilizare titlu secțiune polen */
+.pollen-section h5 {
+    text-align: center; /* Center heading text / Centrarea textului în titlu */
+    margin-bottom: 15px; /* Space below the heading / Spațiu sub titlu */
+}
+
+/* Pollen section subheading styling / Stilizare subtitlu secțiune polen */
+.pollen-section h6 {
+    text-align: center; /* Center subheading text / Centrarea textului în subtitlu */
+}
+
+/* Profile container styling / Stilizare container profil */
+.profile-container {
+    width: 150px; /* Set width for profile container / Lățime setată pentru containerul profilului */
+    height: 150px; /* Set height for profile container / Înălțime setată pentru containerul profilului */
+    background-color: #f0f0f0; /* Background color for the profile container / Culoare de fundal pentru containerul profilului */
+    border-radius: 50%; /* Make the container circular / Transformarea containerului în formă circulară */
+    border: red 2px solid; /* Border for visibility / Bordură pentru vizualizare */
+}
+
+/* Profile image styling / Stilizare imagine profil */
+.profile-container img {
+    width: 100%; /* Full width of the image / Lățime completă a imaginii */
+    height: 100%; /* Full height of the image / Înălțime completă a imaginii */
+    object-fit: cover; /* Cover the container while maintaining aspect ratio / Acoperirea containerului menținând raportul de aspect */
+    border-radius: 50%; /* Round the image corners / Colțuri rotunjite pentru imagine */
+}
